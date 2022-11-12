@@ -22,16 +22,47 @@
         <div id="loginUI"> </div>
     </div>
 
-    <nav class="navbar">
-        <a href="/">
-            <img src="img/logo.png" class="logo" alt="" style="width: 250px; height: 130px;">
-        </a>
-        <ul class="links-container">
-            <li class="link-item"><a href="/" class="link">Home</a></li>
-            <!-- <li class="link-item"><a href="/blogs" class="link">Blogs</a></li> -->
-            <li class="link-item"><a href="/editor" class="link">Editor</a></li>
-        </ul>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/">blogISM</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks links-container">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/editor">Editor</a></li>
+                    <!-- <li><a href="/admin">Login</a></li>
+                    <li><a href="#">Contact</a></li> -->
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
     </nav>
+
+   <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <!--dashboard-->
     <h1 class="heading">your blogs</h1>
@@ -55,6 +86,7 @@
 
     <script src="js/firebase.js"></script>
     <script src="js/dashboard.js"></script>
+    <script src="js/home.js"></script>
     <script src="js/nav.js"></script>
 
 </body>

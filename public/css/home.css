@@ -68,7 +68,7 @@ body {
 }
 
 .nav div.logo a:hover {
-	color: #00e676;
+	color: #000000ca;
 }
 
 .nav div.main_list {
@@ -100,7 +100,7 @@ body {
 }
 
 .nav div.main_list ul li a:hover {
-	color: #242424b6;
+	color: #a7a7a7b6;
 }
 
 /* Home section */
@@ -161,7 +161,7 @@ body {
 	}
 	.nav div.main_list ul li {
 		width: 100%;
-		text-align: right;
+		text-align: center;
 	}
 	.nav div.main_list ul li a {
 		text-align: center;
@@ -369,7 +369,7 @@ body {
 .affix {
 	padding: 0;
     z-index: 999;
-	background-color: #111;
+	background-color: #000000a2;
 }
 
 .myH2 {
@@ -406,7 +406,7 @@ body {
     /* margin-top: 60px; */
     width: 100%;
     height: 100vh;
-    background: url(../img/header.png);
+    background: url(../img/img1.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -423,9 +423,15 @@ body {
 .heading{
     color: #fff;
     /* text-transform: capitalize; */
-    font-size: 80px;
+    font-size: 120px;
     line-height: 60px;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
+}
+@media only screen and (max-width: 768px) {
+    .heading{
+        font-size: 80px;
+        line-height: 30px;
+    }
 }
 
 .heading .small{
@@ -438,6 +444,10 @@ body {
     color: transparent;
     -webkit-text-stroke: 2px #fff;
 }
+.heading .no-fill:hover {
+	color: #0000008f;
+}
+
 
 .btn{
     padding: 10px 20px;
@@ -493,8 +503,9 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.91);
+    padding: 1.5rem;
+    font-size: 1rem;
+    background-color: #000000de;
     text-align: center;
     color: #fff;
 }
